@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+	
+// deklarasi tipe data variabel
+string nama, jurusan, kelas;
+int umur;
+char jenis_kelamin;
+
+// --- proses input ---
+cout << "Siapakah namamu?" << endl;
+cout << "jawab: ";
+getline(cin, nama);
+
+cout << "Berapa umurmu?" << endl;
+cout << "jawab: ";
+cin >> umur;
+
+cout << "Jenis kelamin [L/P]: ";
+cin >> jenis_kelamin;
+
+// Membersihkan buffer sebelum membaca string berikutnya
+cin.ignore();
+cout << "Apa jurusanmu?" << endl;
+cout << "jawab: ";
+getline(cin, jurusan);
+
+cout << "Kelas berapa kamu?" << endl;
+cout << "jawab: ";
+getline(cin, kelas);
+
+  // --- proses output / menampilkan hasil ---
+    cout << endl; // Baris kosong pembatas
+    cout << "Salam kenal, " << "Fadila khairunisa nasution" << ". Sekarang engkau berusia " << "16" << " tahun dan berjenis kelamin " << "P" << "." << endl;
+    cout << "Kamu berada di kelas " << "XI RPL 2" << " dengan jurusan " << "RPL" << "." << endl;
+
+    return 0;
+}
